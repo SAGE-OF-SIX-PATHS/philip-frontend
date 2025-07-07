@@ -11,7 +11,7 @@ const ThemeToggle: React.FC = () => {
           return (
                     <div
                               onClick={() => setDarkMode(!darkMode)}
-                              className={`w-12 h-6 flex items-center rounded-full cursor-pointer px-1 ${darkMode ? "bg-gray-200" : "bg-gray-800"
+                              className={`w-12 h-6 flex items-center rounded-full cursor-pointer px-1 ${darkMode ? "bg-gray-500" : "bg-gray-800"
                                         }`}
                     >
                               <motion.div
