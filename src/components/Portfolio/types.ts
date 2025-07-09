@@ -3,6 +3,11 @@ export interface NavItem {
   label: string;
 }
 
+export interface TagLink {
+  label: string;
+  href: string;
+}
+
 export interface ScrollSection {
   id: number;
   sectionId: string;
@@ -10,7 +15,7 @@ export interface ScrollSection {
   company: string;
   period: string;
   description: string;
-  tags: string[];
+  tags: TagLink[]; // 🔥 Now each tag has a label + href
   bgColor: string;
 }
 
@@ -36,7 +41,7 @@ export interface SocialLinksProps extends ThemeProps {
 
 export interface ContentSectionProps extends ThemeProps {
   section: ScrollSection;
-  className?: string; // ✅ Added this to accept custom styles
+  className?: string; // Good to keep for styling
 }
 
 export interface PortfolioProps {
