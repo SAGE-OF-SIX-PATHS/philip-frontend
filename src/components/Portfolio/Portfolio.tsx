@@ -10,7 +10,8 @@ import type { PortfolioProps } from './types';
 
 const Portfolio: React.FC<PortfolioProps> = ({ isDarkMode = true }) => {
           const [activeNav, setActiveNav] = useState('about');
-
+          
+          
           // Scroll spy functionality
           useEffect(() => {
                     const handleScroll = () => {
@@ -34,6 +35,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ isDarkMode = true }) => {
                     window.addEventListener('scroll', handleScroll);
                     return () => window.removeEventListener('scroll', handleScroll);
           }, []);
+
+          
 
           return (
                     <motion.div
@@ -68,9 +71,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ isDarkMode = true }) => {
                                                   initial={{ opacity: 0, y: 50 }}
                                                   animate={{ opacity: 1, y: 0 }}
                                                   transition={{ duration: 1 }}
-                                                  className="ml-[500px] flex-1 overflow-y-auto"
+                                                  className="ml-[500px] flex-1 overflow-y-auto "
                                         >
-                                                  <div className="p-8">
+                                                  <div className="p-8 space-y-8 sm:space-y-12 ">
                                                             {scrollSections.map((section) => (
                                                                       <motion.div
                                                                                 key={section.id}
@@ -82,31 +85,33 @@ const Portfolio: React.FC<PortfolioProps> = ({ isDarkMode = true }) => {
                                                                                 <PortfolioContentSection
                                                                                           section={section}
                                                                                           isDarkMode={isDarkMode}
+                                                                                          className=""
                                                                                 />
                                                                       </motion.div>
                                                             ))}
                                                   </div>
+
                                         </motion.div>
                               </div>
 
                               {/* Mobile Layout - Optimized */}
-                              <div className="lg:hidden min-h-screen w-full">
+                              <div className="lg:hidden min-h-screen w-full h-full ">
                                         {/* Mobile Header Section */}
                                         <motion.div
                                                   initial={{ opacity: 0, y: -50 }}
                                                   animate={{ opacity: 1, y: 0 }}
                                                   transition={{ duration: 0.8 }}
-                                                  className={`px-5 py-8 transition-colors duration-300 ${isDarkMode
+                                                  className={` px-5 py-8 transition-colors duration-300 h-inherit ${isDarkMode
                                                                       ? 'bg-slate-900/95 backdrop-blur-sm'
                                                                       : 'bg-white/95 backdrop-blur-sm'
                                                             }`}
                                         >
-                                                  <div className="mb-8 max-w-full">
+                                                  <div className="mb-8 max-w-full h-full">
                                                             <PortfolioHeader isDarkMode={isDarkMode} />
                                                   </div>
 
                                                   {/* Navigation */}
-                                                  <div className="mb-8 w-full">
+                                                  <div className="mb-8 w-full ">
                                                             <div className="w-full overflow-x-auto scrollbar-hide pb-2">
                                                                       <PortfolioNavigation
                                                                                 navItems={navItems}
@@ -127,8 +132,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ isDarkMode = true }) => {
                                         </motion.div>
 
                                         {/* Mobile Content Sections - Simplified */}
-                                        <div className="px-5 py-6 w-full">
-                                                  <div className="space-y-6 w-full">
+                                        <div className="px-0 py-6 w-full ">
+                                                  <div className="space-y-16 w-full h-full">
                                                             {scrollSections.map((section, index) => (
                                                                       <motion.div
                                                                                 key={section.id}
@@ -136,7 +141,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ isDarkMode = true }) => {
                                                                                 whileInView={{ opacity: 1, y: 0 }}
                                                                                 transition={{ duration: 0.8, delay: index * 0.1 }}
                                                                                 viewport={{ once: true, margin: "-50px" }}
-                                                                                className={`w-full ${isDarkMode
+                                                                                className={`w-full h-full ${isDarkMode
                                                                                                     ? 'text-slate-200'
                                                                                                     : 'text-slate-800'
                                                                                           }`}
@@ -149,9 +154,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ isDarkMode = true }) => {
                                                             ))}
                                                   </div>
                                         </div>
-
-                                        {/* Mobile Footer Padding */}
-                                        <div className="pb-8"></div>
                               </div>
                     </motion.div>
           );

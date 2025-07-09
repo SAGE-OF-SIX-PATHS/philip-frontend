@@ -15,26 +15,27 @@ export const socialLinks: SocialLink[] = [
           { icon: FaExternalLinkAlt, href: '#', label: 'External Link' }
 ];
 
+
 export const scrollSections: ScrollSection[] = [
            {
                     id: 1,
                     sectionId: 'about',
                     title: 'About Me',
                     company: 'Personal Profile',
-                    period: '2024 — PRESENT',
+                    period: 'UNIZIK COMPUTER SCIENCE ALUMNI & FULLSTACK ENGINEER',
                     description:
-                              'Passionate frontend engineer with expertise in building responsive, optimized digital experiences. I specialize in modern web technologies and have a strong focus on user experience & performance optimization.',
-                    tags: ['React', 'TypeScript', 'node', 'Performance'],
-                    bgColor: 'bg-slate-800/50'
+                              'My name is Akpamgbo Philip, Top 10 graduating computer science student in my BSc degree programme at UNIZIK with an outstanding second class upper division award, Passionate fullstack engineer with expertise in building responsive, optimized digital experiences. I specialize in modern web technologies and have a strong focus on user experience & performance optimization.',
+                    tags: ['2021 — 2025', 'Fullstack Engineer', 'UNIZIK Alumni'],
+                    bgColor: 'inherit'
           },
           {
                     id: 2,
                     sectionId: 'experience',
-                    title: 'Senior Frontend Engineer, Accessibility',
-                    company: 'Klaviyo',
-                    period: '2024 — PRESENT',
+                    title: 'Junior Frontend Intern',
+                    company: '3MTT',
+                    period: '2023 — 2023',
                     description:
-                              "Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.",
+                              "At 3MTT under Afrihub, I Build and maintain critical components and UIs used to  frontend and Worked closely with cross-functional teams, including developers, product designers, and product managers.",
                     tags: ['JavaScript', 'TypeScript', 'React', 'Storybook'],
                     bgColor: 'bg-slate-800/50'
           },
@@ -45,7 +46,7 @@ export const scrollSections: ScrollSection[] = [
                     company: 'Upstatement',
                     period: '2018 — 2024',
                     description:
-                              'Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more.',
+                              'Build, style, and ship high-quality websites, design systems, mobile apps, for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University,',
                     tags: ['JavaScript', 'TypeScript', 'HTML & SCSS', 'React', 'Next.js'],
                     bgColor: 'bg-slate-800/50'
           },
@@ -79,7 +80,7 @@ export const scrollSections: ScrollSection[] = [
                     period: '2023',
                     description:
                               'Created and maintained a comprehensive design system library with reusable components, design tokens, and documentation. Used by multiple teams to ensure consistency across products.',
-                    tags: ['React', 'Storybook', 'CSS Variables', 'Documentation'],
+                    tags: ['React', 'CSS Variables', 'API Documentation'],
                     bgColor: 'bg-slate-800/50'
           }
 ];

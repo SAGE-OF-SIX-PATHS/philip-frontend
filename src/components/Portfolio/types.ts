@@ -12,7 +12,6 @@ export interface ScrollSection {
   description: string;
   tags: string[];
   bgColor: string;
-
 }
 
 export interface SocialLink {
@@ -37,6 +36,7 @@ export interface SocialLinksProps extends ThemeProps {
 
 export interface ContentSectionProps extends ThemeProps {
   section: ScrollSection;
+  className?: string; // ✅ Added this to accept custom styles
 }
 
 export interface PortfolioProps {

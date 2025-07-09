@@ -6,7 +6,7 @@
 
 /* === Light Mode === */
 body {
-  @apply bg-slate-700 text-slate-900;
+  @apply bg-slate-800 text-slate-900;
   /* soft off-white background, dark slate text */
   font-family: 'Montserrat';
   overflow-x: hidden;
