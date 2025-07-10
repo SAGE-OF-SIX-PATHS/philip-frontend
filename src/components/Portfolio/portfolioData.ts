@@ -53,7 +53,7 @@ export const scrollSections: ScrollSection[] = [
                     company: 'Genesys Techub',
                     period: '2024 — 2025',
                     description:
-                              'As a Lead Extern at Genesys Techub, I lead the development of innovative web applications, focusing on performance and user experience. I mentor junior developers in the upskill and learnable program and collaborate with cross-functional teams to deliver high-quality software solutions.',
+                              'As a Lead Extern at Genesys Techub, I lead the development of innovative web applications like Pivot and Pivot challenge website, Urgent2kay directed bill payment system, focusing on performance and user experience. I mentor junior developers in the upskill and learnable program and collaborate with cross-functional teams to deliver high-quality software solutions.',
                     tags: [
                               { label: 'JavaScript', href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
                               { label: 'TypeScript', href: 'https://www.typescriptlang.org/' },
@@ -88,34 +88,73 @@ export const scrollSections: ScrollSection[] = [
           {
                     id: 5,
                     sectionId: 'projects',
-                    title: 'E-commerce Platform',
-                    company: 'Client Project',
+                    title: 'Pivot Website',
+                    company: 'Contract Project',
                     period: '2023',
                     description:
-                              'Built a full-featured e-commerce platform with React, Node.js, and MongoDB. Implemented features like product catalog, shopping cart, payment integration, and admin dashboard. Focused on scalability and user experience.',
+                              'The pivot project comprised of product designers and product manager, frontend and backend experts, where we collaborated in building, deploying and hosting a system for Partners, sponsors, volunteers and business owners to apply to join the programme of pivot in Awka Nigeria.',
                     tags: [
-                              { label: 'React', href: 'https://react.dev' },
-                              { label: 'Node.js', href: 'https://nodejs.org/' },
-                              { label: 'MongoDB', href: 'https://www.mongodb.com/' },
-                              { label: 'Express.js', href: 'https://expressjs.com/' },
-                              { label: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
-                              { label: 'Paystack Payment Integration', href: 'https://paystack.com/' },
+                              { label: 'React' },
+                              { label: 'CSS Variables' },
+                              { label: 'API Documentation' },
                     ],
                     bgColor: 'bg-slate-800/50',
+                    image: './images/pivot.png', 
+                    liveLink: 'https://thepivotsite.netlify.app', 
+                    githubLink: 'https://github.com/pivotweb/Pivot-frontend.git' 
           },
           {
                     id: 6,
                     sectionId: 'projects',
-                    title: 'Design System Library',
-                    company: 'Open Source',
-                    period: '2023',
+                    title: 'Pivot Website',
+                    company: 'Contract Project',
+                    period: '2025',
                     description:
-                              'Created and maintained a comprehensive design system library with reusable components, design tokens, and documentation. Used by multiple teams to ensure consistency across products.',
+                              'The pivot project comprised of product designers and product manager, frontend and backend experts, where we collaborated in building, deploying and hosting a system for Partners, sponsors, volunteers and business owners to apply to join the programme of pivot in Awka Nigeria.',
                     tags: [
-                              { label: 'React', href: 'https://react.dev' },
-                              { label: 'CSS Variables', href: 'https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties' },
-                              { label: 'API Documentation', href: 'https://swagger.io' },
+                              { label: 'React' },
+                              { label: 'CSS Variables' },
+                              { label: 'API Documentation' },
                     ],
                     bgColor: 'bg-slate-800/50',
+                    image: './images/urgent2kay.png',
+                    liveLink: 'https://web-dash-spark.vercel.app', 
+                    githubLink: 'https://github.com/SAGE-OF-SIX-PATHS/urgent-2kay.git'
           },
+          {
+                    id: 7,
+                    sectionId: 'projects',
+                    title: 'Pivot Website',
+                    company: 'Contract Project',
+                    period: '2025',
+                    description:
+                              'The pivot project comprised of product designers and product manager, frontend and backend experts, where we collaborated in building, deploying and hosting a system for Partners, sponsors, volunteers and business owners to apply to join the programme of pivot in Awka Nigeria.',
+                    tags: [
+                              { label: 'React' },
+                              { label: 'CSS Variables' },
+                              { label: 'API Documentation' },
+                    ],
+                    bgColor: 'bg-slate-800/50',
+                    image: './images/pivotChallenge.png', 
+                    liveLink: 'https://challenge.thepivot.ng', 
+                    githubLink: 'https://github.com/pivotweb/Pivot-Website.git' 
+          },
+          {
+                    id: 8,
+                    sectionId: 'projects',
+                    title: 'Pivot Website',
+                    company: 'Contract Project',
+                    period: '2025',
+                    description:
+                              'The pivot project comprised of product designers and product manager, frontend and backend experts, where we collaborated in building, deploying and hosting a system for Partners, sponsors, volunteers and business owners to apply to join the programme of pivot in Awka Nigeria.',
+                    tags: [
+                              { label: 'React' },
+                              { label: 'CSS Variables' },
+                              { label: 'API Documentation' },
+                    ],
+                    bgColor: 'bg-slate-800/50',
+                    image: './images/fintech.png',
+                    liveLink: 'https://challenge.thepivot.ng',
+                    githubLink: 'https://github.com/SAGE-OF-SIX-PATHS/FintechEdited.git'
+          }
 ];

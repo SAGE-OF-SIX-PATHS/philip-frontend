@@ -15,9 +15,13 @@ export interface ScrollSection {
   company: string;
   period: string;
   description: string;
-  tags: TagLink[]; // 🔥 Now each tag has a label + href
+  tags: { label: string; href?: string }[]; // ✅ Tags can have link
   bgColor: string;
+  image?: string; // ✅ For projects only
+  liveLink?: string; // ✅ For projects only
+  githubLink?: string; // ✅ For projects only
 }
+
 
 export interface SocialLink {
   icon: React.ComponentType<{ className?: string }>;
