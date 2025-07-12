@@ -142,11 +142,11 @@ export const scrollSections: ScrollSection[] = [
           {
                     id: 8,
                     sectionId: 'projects',
-                    title: 'Pivot Website',
-                    company: 'Contract Project',
-                    period: '2025',
+                    title: 'Fintech Website',
+                    company: 'Personal Project',
+                    period: '2024',
                     description:
-                              'The pivot project comprised of product designers and product manager, frontend and backend experts, where we collaborated in building, deploying and hosting a system for Partners, sponsors, volunteers and business owners to apply to join the programme of pivot in Awka Nigeria.',
+                              'This is some of the first websites i built and deployed after learnign react, especially useState & side effects, hooks and setState.',
                     tags: [
                               { label: 'React' },
                               { label: 'CSS Variables' },
