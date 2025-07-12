@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import ThemeToggle from "./ThemeToggle";
+import AnimatedButton from "./AnimatedBottonProps";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar: React.FC = () => {
@@ -42,9 +43,12 @@ const Navbar: React.FC = () => {
       <nav className="hidden md:flex gap-6 items-center">
         <NavLinks />
         <ThemeToggle />
-        <button className="px-4 py-1.5 border border-black dark:border-white rounded-full hover:bg-gray-500 hover:text-white dark:hover:bg-gray-700 transition-colors duration-200 text-sm">
+        <AnimatedButton
+          href="blogs"
+          className="px-4 py-1.5 border border-black dark:border-white rounded-full text-sm"
+        >
           Get in Touch
-        </button>
+        </AnimatedButton>
       </nav>
 
       {/* Mobile menu toggle */}
@@ -79,9 +83,9 @@ const Navbar: React.FC = () => {
               ✕
             </button>
             <NavLinks mobile />
-            <button className="px-4 py-1.5 border border-black dark:border-white rounded-full w-fit text-sm">
+            <AnimatedButton className="px-4 py-1.5 border border-black dark:border-white rounded-full w-fit text-sm">
               Get in Touch
-            </button>
+            </AnimatedButton>
           </motion.div>
         )}
       </AnimatePresence>

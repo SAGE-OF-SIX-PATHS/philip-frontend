@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // ✅ Add this import
+import { NavLink } from "react-router-dom";
+import AnimatedButton from "./AnimatedBottonProps";
 
 interface Props {
           mobile?: boolean;
@@ -18,29 +19,37 @@ const NavLinks: React.FC<Props> = ({ mobile = false }) => {
                                         <li key={link} className="relative">
                                                   {link === "Blogs" ? (
                                                             <NavLink
-                                                                      to="https://medium.com/@nzubeakpamgbo" // ✅ This is the route to your BlogPage.tsx
+                                                                      to="https://medium.com/@nzubeakpamgbo"
                                                                       onClick={() => setActiveLink(link)}
-                                                                      className={`px-4 py-2 rounded-md border-2 border-gray-500 ${activeLink === link && !mobile
-                                                                                          ? "bg-black border-yellow-500"
-                                                                                          : !mobile
-                                                                                                    ? "bg-gray-700"
-                                                                                                    : ""
-                                                                                }`}
+                                                                      className="block"
                                                             >
-                                                                      {link}
+                                                                      <AnimatedButton
+                                                                                className={`px-4 py-2 rounded-md border-2 border-gray-500 ${activeLink === link && !mobile
+                                                                                                    ? "!bg-black border-yellow-500"
+                                                                                                    : !mobile
+                                                                                                              ? "border-gray-500"
+                                                                                                              : ""
+                                                                                          }`}
+                                                                      >
+                                                                                {link}
+                                                                      </AnimatedButton>
                                                             </NavLink>
                                                   ) : (
                                                             <a
                                                                       href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
                                                                       onClick={() => setActiveLink(link)}
-                                                                      className={`px-4 py-2 rounded-md border-2 border-gray-500 ${activeLink === link && !mobile
-                                                                                          ? "bg-black border-yellow-500"
-                                                                                          : !mobile
-                                                                                                    ? "bg-gray-700"
-                                                                                                    : ""
-                                                                                }`}
+                                                                      className="block"
                                                             >
-                                                                      {link}
+                                                                      <AnimatedButton
+                                                                                className={`px-4 py-2 rounded-md border-2 border-gray-500 ${activeLink === link && !mobile
+                                                                                                    ? "!bg-black border-yellow-500"
+                                                                                                    : !mobile
+                                                                                                              ? "border-gray-500"
+                                                                                                              : ""
+                                                                                          }`}
+                                                                      >
+                                                                                {link}
+                                                                      </AnimatedButton>
                                                             </a>
                                                   )}
                                         </li>
