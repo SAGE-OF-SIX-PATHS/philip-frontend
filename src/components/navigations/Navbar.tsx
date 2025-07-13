@@ -83,7 +83,10 @@ const Navbar: React.FC = () => {
               ✕
             </button>
             <NavLinks mobile />
-            <AnimatedButton className="px-4 py-1.5 border border-black dark:border-white rounded-full w-fit text-sm">
+            <AnimatedButton
+              className="px-4 py-1.5 border border-black dark:border-white rounded-full w-fit text-sm"
+             href="contact"
+          >
               Get in Touch
             </AnimatedButton>
           </motion.div>
