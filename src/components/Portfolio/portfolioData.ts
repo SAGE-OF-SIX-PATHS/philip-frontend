@@ -78,10 +78,10 @@ export const scrollSections: ScrollSection[] = [
                     description:
                               'Developed a modern, responsive portfolio website using React and TypeScript. Features include smooth scrolling navigation, theme switching, and interactive animations. Built with accessibility and performance in mind.',
                     tags: [
-                              { label: 'React', href: 'https://react.dev' },
-                              { label: 'TypeScript', href: 'https://www.typescriptlang.org/' },
-                              { label: 'Tailwind CSS', href: 'https://tailwindcss.com/' },
-                              { label: 'Framer Motion', href: 'https://www.framer.com/motion/' },
+                              { label: 'React' },
+                              { label: 'TypeScript' },
+                              { label: 'Tailwind CSS' },
+                              { label: 'Framer Motion'},
                     ],
                     bgColor: 'bg-slate-800/50',
           },
