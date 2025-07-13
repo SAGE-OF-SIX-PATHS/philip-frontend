@@ -171,5 +171,28 @@ export const scrollSections: ScrollSection[] = [
                     image: './images/fintech.png',
                     liveLink: 'https://fintech-edited-lwxf.vercel.app/',
                     githubLink: 'https://github.com/SAGE-OF-SIX-PATHS/FintechEdited.git'
+          },
+          {
+                    id: 9,
+                    sectionId: 'projects',
+                    title: 'Personal project (fullstack)',
+                    company: 'Personal Project',
+                    period: '2024',
+                    description:
+                              'This is an e-commmerce website for mobile game purchase and rating, its still under construction.',
+                    tags: [
+                              { label: 'React' },
+                              { label: 'CSS' },
+                              { label: 'API Documentation' },
+                              { label: 'Node.js' },
+                              { label: 'Express.js' },
+                              { label: 'MongoDB' },
+                              { label: 'Netlify and Render' },
+                              { label: 'GIT & GitHub' },
+                    ],
+                    bgColor: 'bg-slate-800/50',
+                    image: './images/game.png',
+                    liveLink: 'https://fullstack-website-v3av.vercel.app',
+                    githubLink: 'https://github.com/SAGE-OF-SIX-PATHS/Fullstack-website.git'
           }
 ];
