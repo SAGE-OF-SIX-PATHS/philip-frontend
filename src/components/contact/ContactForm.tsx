@@ -75,7 +75,7 @@ export const ContactForm: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <div className="block text-sm font-medium text-gray-700 mb-1">
-              Email Address <span className="text-red-500">*</span>
+              Email Address 
             </div>
             <input
               type="email"
@@ -101,7 +101,7 @@ export const ContactForm: React.FC = () => {
             </div>
             <input
               type="text"
-              name="zipCode"
+              name="phone"
               value={formData.zipCode}
               onChange={handleInputChange}
               className="
@@ -138,7 +138,7 @@ export const ContactForm: React.FC = () => {
                bg-slate-200
                font-montserrat
             "
-            placeholder="Tell us about your project..."
+            placeholder="Tell me about your project..."
           />
         </div>
 

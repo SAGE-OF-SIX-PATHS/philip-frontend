@@ -7,7 +7,7 @@ interface Props {
 }
 
 const NavLinks: React.FC<Props> = ({ mobile = false }) => {
-          const links = ["Home", "About", "Projects", "Blogs"];
+          const links = ["Home", "About", "Projects", "Blogs", "CV"];
           const [activeLink, setActiveLink] = useState("Home");
 
           return (
