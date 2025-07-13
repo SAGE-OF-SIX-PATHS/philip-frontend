@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// ✅ Simple Vite config, no history fallback here
 export default defineConfig({
   plugins: [react()],
 })
