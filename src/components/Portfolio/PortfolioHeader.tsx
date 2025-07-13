@@ -16,7 +16,7 @@ const PortfolioHeader: React.FC<ThemeProps> = ({ isDarkMode }) => {
           text-3xl sm:text-4xl mb-2 sm:mb-4   /* ✅ Smaller font size & tighter margin */
           bg-gradient-to-r
           ${isDarkMode ? 'from-white to-slate-300' : 'from-slate-900 to-slate-600'}
-          bg-clip-text text-transparent
+          bg-clip-text text-transparent font-orbitron font-bold tracking-tight
         `}
       >
         Akpamgbo Philip

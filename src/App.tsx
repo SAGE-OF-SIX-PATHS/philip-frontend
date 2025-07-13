@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // ✅ Lazy load your pages
 const LandingPage = lazy(() => import("./pages/LandingPage"));
-const Blogs = lazy(() => import("./pages/BlogPage")); // ✅ Make sure this matches your file name!
+const ContactPage = lazy(() => import("./pages/ContactPage")); // ✅ Make sure this matches your file name!
 
 const App: React.FC = () => (
   <Router>
@@ -13,7 +13,7 @@ const App: React.FC = () => (
         <Route path="/" element={<LandingPage />} />
 
         {/* ✅ Blogs page */}
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Suspense>
   </Router>

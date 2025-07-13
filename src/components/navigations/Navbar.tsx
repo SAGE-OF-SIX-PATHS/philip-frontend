@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         <NavLinks />
         <ThemeToggle />
         <AnimatedButton
-          href="blogs"
+          href="./contact"
           className="px-4 py-1.5 border border-black dark:border-white rounded-full text-sm"
         >
           Get in Touch
