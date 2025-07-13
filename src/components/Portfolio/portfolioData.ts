@@ -1,5 +1,3 @@
-// ✅ portfolioData.ts
-
 import { FaGithub, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa';
 import type { NavItem, ScrollSection, SocialLink } from './types';
 

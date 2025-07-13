@@ -75,18 +75,20 @@ const PortfolioContentSection: React.FC<ContentSectionProps> = ({
 
       <div className="flex flex-wrap justify-center sm:justify-start gap-2 mb-4">
         {section.tags.map((tag, index) => (
-          <a
-            key={index}
-            href={tag.href} // ✅ Each tag can have its own link!
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-colors ${isDarkMode
-              ? 'bg-slate-700/50 text-slate-300 group-hover:bg-slate-600/50'
-              : 'bg-slate-200 text-slate-700 group-hover:bg-slate-300'
-              }`}
-          >
-            {tag.label}
-          </a>
+          <AnimatedButton className='rounded-full'>
+            <a
+              key={index}
+              href={tag.href} // ✅ Each tag can have its own link!
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-3 py-1 rounded-full text-xs sm:text-sm transition-colors ${isDarkMode
+                ? 'bg-slate-700/50 text-slate-300 group-hover:bg-slate-600/50'
+                : 'bg-slate-200 text-slate-700 group-hover:bg-slate-300'
+                }`}
+            >
+              {tag.label}
+            </a>
+          </AnimatedButton>
         ))}
       </div>
 
