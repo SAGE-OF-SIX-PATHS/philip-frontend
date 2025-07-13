@@ -4,13 +4,16 @@ const HeroImage: React.FC = () => {
           return (
                     <div className="relative">
                               <div className="w-32 max-w-xs mx-auto lg:max-w-none lg:w-60 lg:h-60">
-                                        <div className="bg-gray-300 overflow-hidden shadow-lg h-48 lg:h-full">
+                                        <div className="border-0 sm:border-2 sm:border-lime-300 bg-gray-300 overflow-hidden shadow-lg h-48 lg:h-full">
                                                   <img
                                                             src="./public/images/philip3.jpg"
                                                             alt="Frontend Developer"
                                                             className="w-full h-full object-cover"
                                                   />
                                         </div>
+
+
+                                        
                               </div>
 
 
