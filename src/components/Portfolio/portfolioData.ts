@@ -171,7 +171,7 @@ export const scrollSections: ScrollSection[] = [
                     ],
                     bgColor: 'bg-slate-800/50',
                     image: './images/fintech.png',
-                    liveLink: 'https://challenge.thepivot.ng',
+                    liveLink: 'https://fintech-edited-lwxf.vercel.app/',
                     githubLink: 'https://github.com/SAGE-OF-SIX-PATHS/FintechEdited.git'
           }
 ];
