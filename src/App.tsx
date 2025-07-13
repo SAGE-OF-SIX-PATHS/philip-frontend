@@ -12,7 +12,7 @@ const App: React.FC = () => (
         {/* ✅ Main landing page */}
         <Route path="/" element={<LandingPage />} />
 
-        {/* ✅ Blogs page */}
+        {/* ✅ contact page */}
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Suspense>
