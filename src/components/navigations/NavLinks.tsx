@@ -34,6 +34,24 @@ const NavLinks: React.FC<Props> = ({ mobile = false }) => {
                                                                                 {link}
                                                                       </AnimatedButton>
                                                             </NavLink>
+                                                  ) : link === "CV" ? (
+                                                            <a
+                                                                                href="https://my.microsoftpersonalcontent.com/personal/4026fd38627f1e3e/_layouts/15/Doc.aspx?sourcedoc=%7B69e56c33-d5d7-4d2a-aa04-d7e1e0976b88%7D&action=default"
+                                                                      rel="noopener noreferrer"
+                                                                      onClick={() => setActiveLink(link)}
+                                                                      className="block"
+                                                            >
+                                                                      <AnimatedButton
+                                                                                className={`px-4 py-2 rounded-md border-2 border-gray-500 ${activeLink === link && !mobile
+                                                                                                    ? "!bg-black border-yellow-500"
+                                                                                                    : !mobile
+                                                                                                              ? "border-gray-500"
+                                                                                                              : ""
+                                                                                          }`}
+                                                                      >
+                                                                                {link}
+                                                                      </AnimatedButton>
+                                                            </a>
                                                   ) : (
                                                             <a
                                                                       href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}

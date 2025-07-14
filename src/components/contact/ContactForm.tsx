@@ -121,7 +121,7 @@ export const ContactForm: React.FC = () => {
         {/* Message field */}
         <div>
           <div className="block text-sm font-medium text-gray-700 mb-1">
-            Message <span className="text-red-500">*</span>
+            Message 
           </div>
           <textarea
             name="message"
