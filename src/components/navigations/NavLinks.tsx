@@ -36,7 +36,7 @@ const NavLinks: React.FC<Props> = ({ mobile = false }) => {
                                                             </NavLink>
                                                   ) : link === "CV" ? (
                                                             <a
-                                                                                href="https://my.microsoftpersonalcontent.com/personal/4026fd38627f1e3e/_layouts/15/Doc.aspx?sourcedoc=%7B69e56c33-d5d7-4d2a-aa04-d7e1e0976b88%7D&action=default"
+                                                                                href="https://drive.google.com/file/d/1xb6iBf-fcdwlNxX4dC9wkw2s9bTiQV3i/view?usp=drivesdk"
                                                                       rel="noopener noreferrer"
                                                                       onClick={() => setActiveLink(link)}
                                                                       className="block"
